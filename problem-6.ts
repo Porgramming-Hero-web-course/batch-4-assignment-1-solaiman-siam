@@ -6,7 +6,7 @@ interface Profile {
     email: string;
 }
 
-function updateProfile ( obj: Profile, updater: Partial<Profile> ) {
+function updateProfile ( obj: Profile, updater: Partial<Profile> ) : Profile {
     return {
         ...obj,
         ...updater
